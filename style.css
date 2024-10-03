@@ -357,8 +357,6 @@ section{
 }
 
 
-
-
 .skills-list {
     list-style-type: none;
     padding: 0;
@@ -379,9 +377,9 @@ section{
 
 .skills-list li h3 {
     display: flex;
-    justify-content: space-between; /* This places the arrow on the right side */
+    justify-content: space-between; /* Arrow on the right */
     align-items: center;
-    width: 100%; /* Ensures full width for proper alignment */
+    width: 100%; /* Full width */
 }
 
 .skills-list li .arrow {
@@ -401,15 +399,16 @@ section{
     display: none;
     margin-top: 5px;
     color: black;
+    max-height: 350px; /* Maximum height for the scrollable area */
+    overflow-y: auto; /* Enables scrolling */
 }
 
 .skills-list li.active .details {
     display: block;
     margin-top: 10px;
     transition: max-height 0.3s ease;
-    max-height: 400px;
+    /* No max-height here; managed by the .details class */
 }
-
 
 
 .projects {
@@ -492,7 +491,6 @@ section {
     margin-top: auto;
     border-top: 0.1px solid white;
     background-color: black;
-
     
 }
 
@@ -503,10 +501,6 @@ section {
     padding-right: 200px;
     color: white;
     padding-top: 1px;
-
-    
-
-
     
 }
 
