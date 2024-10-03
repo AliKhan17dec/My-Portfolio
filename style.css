@@ -356,6 +356,9 @@ section{
     font-size: 40px;
 }
 
+
+
+
 .skills-list {
     list-style-type: none;
     padding: 0;
@@ -371,6 +374,22 @@ section{
     transition: background-color 0.3s ease, max-height 0.3s ease; 
     position: relative;
     overflow: hidden;
+    background-color: #333;
+}
+
+.skills-list li h3 {
+    display: flex;
+    justify-content: space-between; /* This places the arrow on the right side */
+    align-items: center;
+    width: 100%; /* Ensures full width for proper alignment */
+}
+
+.skills-list li .arrow {
+    transition: transform 0.3s ease;
+}
+
+.skills-list li.active .arrow {
+    transform: rotate(180deg); /* Flips the arrow */
 }
 
 .skills-list li:hover {
@@ -387,7 +406,10 @@ section{
 .skills-list li.active .details {
     display: block;
     margin-top: 10px;
+    transition: max-height 0.3s ease;
+    max-height: 400px;
 }
+
 
 
 .projects {

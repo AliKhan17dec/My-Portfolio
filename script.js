@@ -49,8 +49,6 @@ window.onload = typeWriter
 
 
 
-
-
 document.querySelectorAll('.skills-list li').forEach(item => {
     item.addEventListener('click', () => {
         // Close all other open details
@@ -64,6 +62,3 @@ document.querySelectorAll('.skills-list li').forEach(item => {
         item.classList.toggle('active');
     });
 });
-
-
-
