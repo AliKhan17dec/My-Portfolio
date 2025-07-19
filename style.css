@@ -327,6 +327,8 @@ section{
     color: white;
     font-size: 25px;
     padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .habout {
     color: #077b32;
@@ -511,3 +513,7 @@ section {
     padding-top: 20px;
 }
 
+.secondsection {
+    padding-left: 20px;
+    padding-right: 20px;
+}
